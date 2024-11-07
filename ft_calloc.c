@@ -6,7 +6,7 @@
 /*   By: abonnard <abonnard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 17:39:27 by abonnard          #+#    #+#             */
-/*   Updated: 2024/11/07 14:28:02 by abonnard         ###   ########.fr       */
+/*   Updated: 2024/11/07 19:15:29 by abonnard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ void	*ft_calloc(size_t count, size_t size)
 
 	if (count && size > SIZE_MAX / count)
 		return (NULL);
-
-
 	ptr = malloc(count * size);
 	if (!ptr)
 		return (0);
