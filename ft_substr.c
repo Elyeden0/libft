@@ -6,12 +6,12 @@
 /*   By: abonnard <abonnard@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:14:10 by abonnard          #+#    #+#             */
-/*   Updated: 2024/11/07 12:13:34 by abonnard         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:47:52 by abonnard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <string.h>
+#include "libft.h"
 
 static char	*allocate_empty_string(void)
 {
@@ -32,7 +32,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	s_len = strlen(s);
+	s_len = ft_strlen(s);
 	if (start >= s_len)
 		return (allocate_empty_string());
 	if (len > s_len - start)
